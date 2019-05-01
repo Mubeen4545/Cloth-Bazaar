@@ -50,6 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CBContext.cs" />
+    <Compile Include="Migrations\201903271650112_initialized.cs" />
+    <Compile Include="Migrations\201903271650112_initialized.Designer.cs">
+      <DependentUpon>201903271650112_initialized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +66,11 @@
       <Project>{60cb8911-bbd8-44fe-9011-cfb0443abdc1}</Project>
       <Name>ClothBazaar.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201903271650112_initialized.resx">
+      <DependentUpon>201903271650112_initialized.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
